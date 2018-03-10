@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <paramer
+        key="base-url"
+        value="http://10.10.20.187:8000/"/>
+
+    <paramer
+        key="appconfig-url"
+        value="http://10.10.20.187:8000/static/app/mainconfig.json"/>
+
+    <paramer
+        key="read-time"
+        value="30"/>
+    <paramer
+        key="write-time"
+        value="30"/>
+    <paramer
+        key="connection-time"
+        value="30"/>
+    <paramer
+        key="use-https"
+        value="false"/>
+</configuration>

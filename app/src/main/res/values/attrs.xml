@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TransCircleButton">
+        <attr name="bgColor"  format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="text" format="string"/>
+        <attr name="shrinkInterval" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RecipButton">
+        <attr name="normal_text" format="string"/>
+        <attr name="countdown_text" format="string"/>
+        <attr name="millisInFuture" format="integer"/>
+        <attr name="countDownInterval" format="integer"/>
+        <attr name="countDownBg" format="reference"/>
+        <attr name="normalBg" format="reference"/>
+        <attr name="normalTextColor" format="color"/>
+        <attr name="countDownTextColor" format="color"/>
+    </declare-styleable>
+
+</resources>
