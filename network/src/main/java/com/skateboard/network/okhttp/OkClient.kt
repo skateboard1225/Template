@@ -68,7 +68,7 @@ class OkClient private constructor()
             fun build(): OkClient
             {
 
-                okClient=OkClient()
+                okClient = OkClient()
                 okClient.okHttpClient = builder.build()
                 return okClient
             }
@@ -118,7 +118,7 @@ class OkClient private constructor()
                 }
                 else
                 {
-                    val formBodyBuilder=FormBody.Builder()
+                    val formBodyBuilder = FormBody.Builder()
                     for (key in formParamMap.keys)
                     {
                         val value = formParamMap[key]
@@ -174,8 +174,8 @@ class OkClient private constructor()
             {
                 cHandler.post {
 
-                    cancelRequest(okHttpRequest.getTag())
                     callback?.onFailure(call, e)
+                    cancelRequest(okHttpRequest.getTag())
 
                 }
             }
@@ -183,24 +183,24 @@ class OkClient private constructor()
             override fun onResponse(call: Call?, response: Response?)
             {
 
-                if(response==null || !response.isSuccessful)
+                if (response == null || !response.isSuccessful)
                 {
                     cHandler.post {
 
-                        cancelRequest(okHttpRequest.getTag())
                         callback?.onFailure(call, null)
+                        cancelRequest(okHttpRequest.getTag())
 
                     }
                 }
                 else
                 {
-                    if(response.isSuccessful)
+                    if (response.isSuccessful)
                     {
                         val result = okHttpRequest.parseResponse(response)
                         cHandler.post {
 
-                            cancelRequest(okHttpRequest.getTag())
                             callback?.onResponse(call, result)
+                            cancelRequest(okHttpRequest.getTag())
 
                         }
                     }
