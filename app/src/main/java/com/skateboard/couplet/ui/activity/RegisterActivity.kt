@@ -179,7 +179,7 @@ class RegisterActivity : CBaseActivity(), View.OnClickListener
     private fun checkIdCodeInvalid(code: String?): Boolean
     {
 
-        if (code == null || code?.isEmpty())
+        if (code?.isEmpty() != false)
         {
             showError(this.codeInp, getString(R.string.idcode_empty))
             return false

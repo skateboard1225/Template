@@ -9,7 +9,7 @@ import com.skateboard.couplet.R
 import com.skateboard.couplet.ui.activity.base.CBaseActivity
 import com.skateboard.library.application.manager.AccountManager
 import com.skateboard.library.application.manager.LaunchManager
-import com.skateboard.library.ui.activity.BaseActivity
+import com.skateboard.library.ui.activity.base.BaseActivity
 import com.skateboard.library.util.DialogUtil
 
 /**

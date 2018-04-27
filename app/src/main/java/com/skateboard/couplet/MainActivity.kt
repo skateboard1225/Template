@@ -1,9 +1,8 @@
 package com.skateboard.couplet
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.skateboard.library.application.manager.LaunchManager
-import com.skateboard.library.ui.activity.BaseActivity
+import com.skateboard.library.ui.activity.base.BaseActivity
 
 class MainActivity : BaseActivity()
 {

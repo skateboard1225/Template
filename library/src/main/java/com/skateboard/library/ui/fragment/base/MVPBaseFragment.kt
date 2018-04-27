@@ -1,4 +1,4 @@
-package com.skateboard.library.ui.fragment
+package com.skateboard.library.ui.fragment.base
 
 import android.content.Context
 import android.os.Bundle
@@ -12,17 +12,18 @@ import com.skateboard.library.presenter.IView
 /**
  * Created by skateboard on 2018/1/17.
  */
-abstract class MVPBaseFragment<V : IView, P : IPresenter<V>>:Fragment(),IView
+abstract class MVPBaseFragment<V : IView, P : IPresenter<V>> : BaseFragment(), IView
 {
 
-    protected var presenter:P?=null
+    protected var presenter: P? = null
 
-    abstract  fun onLoadPresenter():P
+    abstract fun onLoadPresenter(): P
 
     override fun onAttach(context: Context?)
     {
         super.onAttach(context)
-        presenter=onLoadPresenter()
+        presenter = onLoadPresenter()
+        presenter?.attachView(this as V)
     }
 
     override fun onCreate(savedInstanceState: Bundle?)
@@ -36,11 +37,10 @@ abstract class MVPBaseFragment<V : IView, P : IPresenter<V>>:Fragment(),IView
     }
 
 
-
     override fun onDestroy()
     {
         super.onDestroy()
         presenter?.detach()
-        presenter=null
+        presenter = null
     }
 }

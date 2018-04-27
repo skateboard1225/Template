@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.skateboard.couplet.MainActivity
 import com.skateboard.couplet.ui.activity.base.CBaseActivity
 import com.skateboard.library.application.manager.ApplicationManager
-import com.skateboard.library.ui.activity.BaseActivity
+import com.skateboard.library.ui.activity.base.BaseActivity
 
 /**
  * Created by skateboard on 2018/2/28.

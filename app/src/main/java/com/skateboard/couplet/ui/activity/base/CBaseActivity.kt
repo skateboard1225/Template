@@ -2,7 +2,7 @@ package com.skateboard.couplet.ui.activity.base
 
 import android.support.v7.widget.Toolbar
 import com.skateboard.couplet.R
-import com.skateboard.library.ui.activity.BaseActivity
+import com.skateboard.library.ui.activity.base.BaseActivity
 
 /**
  * Created by skateboard on 2018/3/8.
